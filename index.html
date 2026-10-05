@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+       SEO — EDIT HERE: page title & description
+       ============================================================ -->
+  <title>Prince | Web Designer &amp; Frontend Developer</title>
+  <meta name="description" content="Portfolio of Prince — Web Designer and Frontend Developer skilled in HTML, CSS, JavaScript, Figma, Photoshop and video editing. BCA student at IGNOU with an Advanced Diploma in Website Engineering." />
+  <meta name="keywords" content="Prince, Web Designer, Frontend Developer, HTML, CSS, JavaScript, Figma, Portfolio" />
+  <meta name="author" content="Prince" />
+
+  <!-- Open Graph (how the site looks when shared on social media) -->
+  <meta property="og:title" content="Prince | Web Designer & Frontend Developer" />
+  <meta property="og:description" content="Portfolio of Prince — Web Designer and Frontend Developer." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (small browser tab icon) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%236366f1'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>P</text></svg>" />
+
+  <!-- Google Fonts: Sora for headings, Inter for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Accessibility: lets keyboard users jump straight to the content -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ==========================================================
+       NAVBAR
+       ========================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+
+      <!-- EDIT HERE: change the logo text -->
+      <a href="#home" class="logo" aria-label="Prince — go to top">
+        <span class="logo-mark">P</span>
+        <span class="logo-text">Prince<span class="accent">.</span></span>
+      </a>
+
+      <!-- Desktop navigation links (hamburger toggles these on mobile) -->
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Web Projects</a>
+        <a href="#designs" class="nav-link">Graphic Design</a>
+        <a href="#videos" class="nav-link">Video Editing</a>
+        <a href="#contact" class="nav-link nav-cta">Contact</a>
+      </nav>
+
+      <!-- Hamburger button (visible on mobile only) -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ==========================================================
+         HERO SECTION
+         ========================================================== -->
+    <section id="home" class="hero section">
+      <!-- Decorative background glow (pure CSS, subtle) -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="grid-lines"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <span class="hero-badge">✦ Available for internships &amp; freelance work</span>
+
+          <!-- EDIT HERE: your name -->
+          <h1 class="hero-title">Hi, I'm <span class="accent">Prince</span></h1>
+
+          <!-- Rotating role (typed by JavaScript) -->
+          <p class="hero-role">I'm a <span id="typed" class="typed"></span><span class="typed-cursor" aria-hidden="true">|</span></p>
+
+          <!-- EDIT HERE: your short introduction -->
+          <p class="hero-text">
+            I design and build clean, responsive websites — and I also create
+            posters, social media designs and edit videos. Currently pursuing
+            BCA from IGNOU along with an Advanced Diploma in Website
+            Engineering, I love turning ideas into simple, beautiful digital
+            experiences.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+
+          <ul class="hero-stats" aria-label="Quick facts">
+            <li><strong>HTML / CSS / JS</strong><span>Core stack</span></li>
+            <li><strong>Figma / Photoshop</strong><span>Design tools</span></li>
+            <li><strong>BCA + Diploma</strong><span>Website Engineering</span></li>
+          </ul>
+        </div>
+
+        <!-- Decorative "code card" — visual only, no image file needed -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="code-card">
+            <div class="code-card-top">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="code-title">prince.js</span>
+            </div>
+            <pre class="code-body"><code><span class="c-key">const</span> <span class="c-var">prince</span> = {
+  role: [<span class="c-str">"Web Designer"</span>,
+         <span class="c-str">"Frontend Dev"</span>],
+  skills: [<span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>,
+           <span class="c-str">"JavaScript"</span>],
+  design: <span class="c-bool">true</span>,
+  coffee: <span class="c-key">Infinity</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About section">
+        <span class="mouse"></span>
+      </a>
+    </section>
+
+    <!-- ==========================================================
+         ABOUT SECTION
+         ========================================================== -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">About</span>
+          <h2 class="section-title">Who I Am</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <!-- EDIT HERE: your about text -->
+            <p>
+              I'm <strong>Prince</strong>, an aspiring Web Designer and
+              Frontend Developer from India. I'm currently pursuing my
+              <strong>BCA from IGNOU</strong> along with an
+              <strong>Advanced Diploma in Website Engineering</strong>, where
+              I'm building a strong foundation in web design, development and
+              digital media.
+            </p>
+            <p>
+              On the development side, I work with
+              <strong>HTML, CSS and JavaScript</strong> to create clean,
+              responsive and accessible websites. On the creative side, I
+              have hands-on experience in <strong>Graphic Design</strong>
+              (Photoshop, Illustrator, CorelDRAW, Figma) and
+              <strong>Video Editing</strong> — so I can take a project from
+              idea, to brand, to finished product.
+            </p>
+            <p>
+              I'm looking for internships and junior roles where I can learn
+              from experienced teams and contribute real, working websites.
+            </p>
+
+            <ul class="about-points">
+              <li>✦ Clean, semantic, responsive code</li>
+              <li>✦ Design sense backed by real tools (Figma / PS / AI)</li>
+              <li>✦ Fast learner, comfortable with AI tools &amp; Git</li>
+            </ul>
+          </div>
+
+          <div class="about-cards reveal">
+            <div class="about-card">
+              <span class="about-icon">🎓</span>
+              <div>
+                <h3>Education</h3>
+                <p>BCA — IGNOU<br />Advanced Diploma in Website Engineering</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <span class="about-icon">💻</span>
+              <div>
+                <h3>Focus</h3>
+                <p>Web design &amp; frontend development, responsive UI, modern CSS</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <span class="about-icon">🎨</span>
+              <div>
+                <h3>Creative Side</h3>
+                <p>Graphic design, posters &amp; social media creatives, video editing</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         SKILLS SECTION
+         ========================================================== -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Skills</span>
+          <h2 class="section-title">What I Work With</h2>
+        </div>
+
+        <!-- EDIT HERE: add / remove skill pills freely -->
+        <div class="skills-grid">
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon">🌐</span>
+              <h3>Web</h3>
+            </div>
+            <p class="skill-sub">Building responsive, working websites</p>
+            <ul class="skill-list">
+              <li class="skill-pill">HTML5</li>
+              <li class="skill-pill">CSS3</li>
+              <li class="skill-pill">JavaScript</li>
+              <li class="skill-pill">Responsive Web Design</li>
+              <li class="skill-pill">Basic PHP</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon">🎨</span>
+              <h3>Design</h3>
+            </div>
+            <p class="skill-sub">Creating posters, logos &amp; UI</p>
+            <ul class="skill-list">
+              <li class="skill-pill">Photoshop</li>
+              <li class="skill-pill">Illustrator</li>
+              <li class="skill-pill">CorelDRAW</li>
+              <li class="skill-pill">Figma</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head">
+              <span class="skill-icon">🧰</span>
+              <h3>Other</h3>
+            </div>
+            <p class="skill-sub">Tools that keep work organised</p>
+            <ul class="skill-list">
+              <li class="skill-pill">Git / GitHub</li>
+              <li class="skill-pill">MS Office</li>
+              <li class="skill-pill">AI Tools</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         WEB PROJECTS SECTION
+         (cards are rendered by js/script.js from the PROJECTS array —
+          edit your projects there, not in this HTML)
+         ========================================================== -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Web Projects</span>
+          <h2 class="section-title">Things I've Built</h2>
+        </div>
+
+        <div class="project-grid" id="project-grid">
+          <!-- JS inserts project cards here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         GRAPHIC DESIGN SECTION (gallery + lightbox)
+         (cards are rendered by js/script.js from the DESIGNS array)
+         ========================================================== -->
+    <section id="designs" class="section designs">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Graphic Design</span>
+          <h2 class="section-title">Design Work</h2>
+        </div>
+
+        <div class="design-grid" id="design-grid">
+          <!-- JS inserts design cards here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         VIDEO EDITING SECTION
+         (cards are rendered by js/script.js from the VIDEOS array)
+         ========================================================== -->
+    <section id="videos" class="section videos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Video Editing</span>
+          <h2 class="section-title">Video Showcase</h2>
+        </div>
+
+        <div class="video-grid" id="video-grid">
+          <!-- JS inserts video cards here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         RESUME SECTION
+         ========================================================== -->
+    <section id="resume" class="section resume">
+      <div class="container">
+        <div class="resume-box reveal">
+          <div class="resume-text">
+            <span class="section-tag">Resume</span>
+            <h2 class="section-title">Download My Resume</h2>
+            <p>
+              Want the quick version? My resume covers my education,
+              technical skills, design work and projects in one page.
+              Reach out if you'd like to talk about an opportunity.
+            </p>
+          </div>
+          <!-- The href is set automatically by js/script.js (RESUME_FILE constant) -->
+          <a class="btn btn-primary btn-lg" id="resume-btn" href="#" download>
+            ⬇ Download Resume (PDF)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         CONTACT SECTION
+         (contact cards are rendered by js/script.js from CONTACT_LINKS)
+         ========================================================== -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Let's Work Together</h2>
+        </div>
+
+        <p class="contact-lead reveal">
+          I'm currently open to <strong>internships</strong> and
+          <strong>junior Web Designer / Frontend Developer</strong> roles.
+          The fastest way to reach me is email — or connect with me on any
+          platform below.
+        </p>
+
+        <div class="contact-grid" id="contact-grid">
+          <!-- JS inserts contact cards here -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================
+       FOOTER
+       ========================================================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark small">P</span>
+        <!-- EDIT HERE: footer name + tagline -->
+        <span class="footer-name">Prince<span class="accent">.</span></span>
+        <p class="footer-tagline">Designing and building clean, human-friendly web experiences.</p>
+      </div>
+
+      <!-- JS fills these social links from CONTACT_LINKS -->
+      <nav class="footer-social" id="footer-social" aria-label="Social media links"></nav>
+
+      <!-- EDIT HERE: copyright year is set automatically by JS -->
+      <p class="footer-copy">© <span id="year"></span> Prince. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back-to-top floating button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+  <!-- ==========================================================
+       LIGHTBOX (large preview for graphic design images)
+       ========================================================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close preview">✕</button>
+    <button class="lightbox-arrow prev" id="lightbox-prev" aria-label="Previous image">‹</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-img" src="" alt="" />
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox-arrow next" id="lightbox-next" aria-label="Next image">›</button>
+  </div>
+
+  <!-- ==========================================================
+       VIDEO MODAL (plays local mp4 or a YouTube embed)
+       ========================================================== -->
+  <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-label="Video player" hidden>
+    <div class="video-modal-box">
+      <button class="video-modal-close" id="video-modal-close" aria-label="Close video">✕</button>
+      <div id="video-modal-player" class="video-modal-player"></div>
+      <p class="video-modal-note" id="video-modal-note" hidden>
+        This is a placeholder video slot — open <code>js/script.js</code> and add a
+        YouTube link or drop an <code>.mp4</code> into the <code>videos/</code> folder.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
